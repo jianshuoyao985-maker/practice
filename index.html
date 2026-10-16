@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#20584b">
+  <meta name="description" content="旅游数字化产品设计与营销赛项500题练习：顺序刷题、随机刷题、错题复习、收藏和模拟练习。">
+  <title>旅数刷题室 · 旅游数字化产品设计与营销</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/bank.js" defer></script>
+  <script src="assets/engine.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到练习内容</a>
+  <aside class="sidebar" aria-label="主导航">
+    <a class="brand" href="./index.html" aria-label="旅数刷题室首页"><span class="brand-icon">旅</span><span><strong>旅数刷题室</strong><small>学一点，就进一步。</small></span></a>
+    <div class="side-label">我的学习空间</div>
+    <nav id="navigation"></nav>
+    <section class="side-progress" id="side-progress" aria-label="学习进度"></section>
+    <div class="side-footer"><span class="status-dot"></span>进度保存在本机浏览器<button class="text-link" data-action="data">备份与设置 <span aria-hidden="true">↗</span></button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="mobile-brand"><span class="brand-icon small">旅</span><strong>旅数刷题室</strong></div><span class="topbar-course">旅游数字化产品设计与营销 <span class="separator">/</span> 2026 公开题库</span><div class="topbar-actions"><button class="timer-link" data-action="exam" id="exam-indicator" hidden></button><button class="icon-button" data-action="search" aria-label="搜索题库" title="搜索题库"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16.2 16.2 4.8 4.8"/></svg></button><button class="icon-button" data-action="data" aria-label="数据备份与设置" title="备份与设置"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5"/></svg></button></div></header>
+    <div id="storage-warning" class="warning-banner" role="status" hidden></div>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer"><span>把 500 道题，变成每天的一小步。</span><a href="assets/original-question-bank.pdf" target="_blank" rel="noopener">查看原始题库 PDF ↗</a></footer>
+  </div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="移动端导航"></nav>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript><div class="noscript">请启用浏览器的 JavaScript 以使用刷题功能。</div></noscript>
+</body>
+</html>
